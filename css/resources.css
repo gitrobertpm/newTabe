@@ -1,0 +1,375 @@
+/* RESOURCES CSS -- FOR RESOURCE PAGE, ABOUT PAGE, COMING SOON PAGE, AND CONTACT PAGE*/
+/* DESIGNED FOR SMALL SCREENS FIRST */
+/* STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES */
+/* MOST IMAGES LOADED IN HOME.JS  */
+
+/* NAV AND FOOTER STYLINGS LOCATED IN MAIN.CSS */
+
+body {
+	text-align: center;
+}
+
+/* BAKGROUNDS *******************************/
+#background,
+#background2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -999;
+}
+
+#background {
+	background: -webkit-linear-gradient(top left, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));background: linear-gradient(to bottom right, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));
+}
+
+#background2 {
+	background: -webkit-linear-gradient(top right, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));background: linear-gradient(to bottom left, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));
+}
+/* END BACKGROUNDS ***********************/
+
+
+/* HEADER STYLINGS ********************************************/
+header {
+	overflow: hidden;
+	position: relative;
+}
+
+#logo {
+	height: 225px;
+	width: 250px;
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 50px;
+	background-image: url("../img/tabeLogoSm.png");
+	background-size: 200px 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#logoTabeDude {
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	margin-left: -15px;
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/icons&art/tabeDude2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 999;
+	-webkit-animation: reveal 1s ease-in-out .25s forwards; animation: reveal 1s ease-in-out .25s forwards;
+}
+
+@-webkit-keyframes reveal {
+	0% {top: 125px; opacity: 0;}
+	50% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	75% {top: 95px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+	100% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+@keyframes reveal {
+	0% {top: 125px; opacity: 0;}
+	50% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	75% {top: 95px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+	100% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+}
+
+h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.7em;
+	font-size: 9vw;
+	margin: 20px atuo 5px;
+	color: rgb(50,50,50);
+	text-shadow: 1px 1px 0px rgb(125,175,125);
+}
+
+h2 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.7em;
+	font-size: 9vw;
+	font-size: 7vw;
+	color: rgb(25,50,25);
+	text-shadow: 1px 1px 0px rgb(175,225,175);
+	margin: 5px auto 15px;
+}
+/* END HEADER *******************/
+
+
+/* RESOURCES PAGE ****************************************************************/
+#resourcesWrapper ul {
+	font-weight: bold;
+	list-style: none;
+	padding-left: 0;
+	margin: 50px auto 100px;
+}
+
+#resourcesWrapper li {
+	margin: 25px;
+}
+
+#resourcesWrapper li a {
+	letter-spacing: 1.5px;
+	color: rgb(50,200,50);
+	text-shadow: 1px 1px 0px rgb(125,150,125);
+}
+
+#resourcesWrapper .orange {
+	color: darkorange;
+}
+/* END RESOURCES PAGE ******************/
+
+
+/* ABOUT PAGE ***************************************************************************/
+section:nth-of-type(1) {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+section:nth-of-type(1) h2{
+	font-family: ‘Times New Roman’, Times, serif;
+	font-style: normal;
+	font-weight: 100;
+	text-shadow: 1px 1px 0px rgb(150,225,150);
+}
+
+.infoDiv {
+	display: inline-block;
+	margin: 25px auto;
+	color: rgb(50,50,50);
+	overflow: hidden;
+}
+
+.infoDivTitle {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 1.3em;
+	color: rgb(50,100,50);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgb(150,150,150);
+}
+
+.infoDivIcon {
+	width: 75px;
+	height: 75px;
+	margin: 10px auto;
+	/* border: 1px solid black; */
+}
+
+
+blockquote {
+	width: 90%;
+	margin: 10px auto;
+	text-align: justify;
+}
+
+h4 {
+	text-align: right;
+	width: 90%;
+	max-width: 700px;
+	margin: 0px auto 10px;
+}
+
+h4 span {
+	font-style: italic;
+	color: rgb(50,100,50);
+}
+/* END TABOUT PAGE ****************/
+
+
+/* CONTACT PAGE ********************************/
+#comingSoonIcon {
+	width: 100px;
+	height: 100px;
+}
+
+#contactWrapper h3 {
+	font-size: 2em;
+	font-family: ‘Times New Roman’, Times, serif;
+	color: darkorange;
+	text-shadow: 1px 1px 1px rgb(150,150,150);
+}
+
+#contactWrapper p {
+	margin: 25px auto;
+}
+
+#contactWrapper a {
+	color: rgb(50,200,50);
+	font-weight: bold;
+	padding-bottom: 100px;
+}
+
+#twitterIcon {
+	width: 200px;
+	height: 125px;
+}
+
+#pinterestIcon {
+	width: 200px;
+	height: 125px;
+}
+
+#email {
+	color: rgb(50,200,50);
+	margin-bottom: 0px !important;
+}
+/* END CONTACT PAGE ***********/
+
+
+/* COMING SOON PAGE *********************************/
+#comingSoonWrapper h3 {
+	font-size: 2em;
+	color: darkorange;
+}
+
+#comingSoonWrapper p {
+	margin: 10px auto;
+}
+/* END COMING SOON PAGE **************/
+
+
+/* MEDIUM SCREENS ************************************************/
+@media screen and (min-width: 550px) {
+	/* HEADER **********************************/
+	#logo {
+		height: 400px;
+		width: 500px;
+		padding-top: 50px;
+		background-image: url("../img/tabeLogoM.png");
+		background-size: 450px 300px;
+		-webkit-filter: drop-shadow(15px 15px 15px rgba(0,50,0,0.7));filter: drop-shadow(15px 15px 15px rgba(0,50,0,0.7));
+	}
+
+	#logoTabeDude  {
+		top: 210px;
+		width: 75px;
+		height: 75px;
+		margin-left: -30px;
+	}
+	
+	@-webkit-keyframes reveal {
+		0% {top: 210px; opacity: 0;}
+		50% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 177px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	@keyframes reveal {
+		0% {top: 210px; opacity: 0;}
+		50% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 177px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	
+	h1 {
+		font-size: 3em;
+		font-size: 7vw;
+	}
+	
+	h2 {
+		font-size: 3em;
+		font-size: 7vw;
+		margin: 5px auto;
+	}
+	/* END HEADER MEDIUM SCREENS *************************/
+	
+	
+	/* RESOURCES PAGE MEDIUM SCREENS ****************************************************************/
+	#resourcesWrapper li a {
+		font-size: 1.5em;
+	}
+	/* END RESOURCES PAGE MEDIUM SCREENS ******************/
+	
+	
+	/* ABOUT PAGE MEDIUM SCREENS********************************************/
+	section:nth-of-type(1) {
+		/* max-width: 700px; */
+	}
+	
+	section:nth-of-type(1) h2{
+		font-size: 2em;
+	}
+	
+	blockquote {
+		max-width: 700px;
+		padding: 10px;
+		box-shadow: 0px 5px 5px rgba(50,100,50,0.7);
+		border-top: 1px solid white;
+		border-bottom: 1px solid darkgrey;
+	}
+	
+	h4 {
+		text-align: right;
+		width: 90%;
+		max-width: 700px;
+		margin: 0px auto 10px;
+		padding: 10px;
+		box-shadow: 0px 5px 5px rgba(50,100,50,0.7);
+		border-top: 1px solid white;
+		border-bottom: 1px solid darkgrey;
+	}
+	/* END ABOUT PAGE MEDIUM SCREENS************/
+	
+	/* CONTACT PAGE MEDUIM SCREENS ********************************/
+	#contactWrapper h3 {
+		font-size: 2.5em;
+	}
+	
+	#contactWrapper p {
+		font-size: 1.25em;
+	}
+	/* END CONTACT PAGE MEDUIM SCREENS ***********/
+}
+/* END MEDUIM SCREENS *************/
+
+
+/* LARGE SCREENS ********************************************************************/
+@media screen and (min-width: 1000px) {
+	/* HEADER LARGE SCREENS**************************/
+	#logo {
+		height: 500px;
+		width: 750px;
+		padding-top: 100px;
+		background-image: url("../img/tabeLogoL.png");
+		background-size: 650px 400px;
+	}
+	
+	#logoTabeDude  {
+		top: 250px;
+		width: 100px;
+		height: 100px;
+		margin-left: -40px;
+	}
+	
+	@-webkit-keyframes reveal {
+		0% {top: 250px; opacity: 0;}
+		50% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 220px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	@keyframes reveal {
+		0% {top: 250px; opacity: 0;}
+		50% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 220px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	
+	 h1 {
+		font-size: 5em;
+		font-size: 5vw;
+	}
+	
+	h2 {
+		font-size: 5em;
+		font-size: 5vw;
+	}
+	/* END HEADER LEARGE SCREENS ********************/
+	
+	
+	/* ABOUT PAGE */
+	section:nth-of-type(1) h2{
+		font-size: 2em;
+	}
+}
+/* END LARGE SCREENS ************/

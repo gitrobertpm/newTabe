@@ -1,0 +1,767 @@
+/* HOME CSS */
+/* DESIGNED FOR SMALL SCREENS FIRST */
+/* STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES */
+/* MOST IMAGES LOADED IN HOME.JS  */
+
+/* NAV AND FOOTER STYLINGS LOCATED IN MAIN.CSS */
+
+body {
+	text-align: center;
+}
+
+/* BAKGROUNDS *******************************/
+#background,
+#background2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -999;
+}
+
+#background {
+	background: -webkit-linear-gradient(top left, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));background: linear-gradient(to bottom right, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));
+}
+
+#background2 {
+	background: -webkit-linear-gradient(top right, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));background: linear-gradient(to bottom left, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));
+}
+/* END BACKGROUNDS ***********************/
+
+
+/* HEADER STYLINGS ********************************************/
+header {
+	overflow: hidden;
+	position: relative;
+}
+
+#logo {
+	height: 225px;
+	width: 250px;
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 50px;
+	background-image: url("../img/tabeLogoSm.png");
+	background-size: 200px 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#logoTabeDude {
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	margin-left: -15px;
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/icons&art/tabeDude2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 999;
+	-webkit-animation: reveal 1s ease-in-out .25s forwards; animation: reveal 1s ease-in-out .25s forwards;
+}
+
+@-webkit-keyframes reveal {
+	0% {top: 125px; opacity: 0;}
+	50% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	75% {top: 95px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+	100% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+@keyframes reveal {
+	0% {top: 125px; opacity: 0;}
+	50% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	75% {top: 95px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+	100% {top: 95px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+}
+
+h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.7em;
+	font-size: 9vw;
+	margin: 20px atuo 5px;
+	color: rgb(50,50,50);
+	text-shadow: 1px 1px 0px rgb(125,175,125);
+}
+
+h2 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 1.2em;
+	font-size: 7vw;
+	color: rgb(50,100,50);
+	text-shadow: 1px 1px 0px rgb(175,225,175);
+	margin: 5px auto 15px;
+}
+/* END HEADER *******************/
+
+
+/* MAIN CONTENT OF HOME PAGE ******************************************/
+#mobDiv {
+	width: 100%;
+	height: 60px;
+	margin-top: 35px;
+	background: url("../img/backgroundImgs/mobSm.jpg");
+	background-size: 100% 100%;
+	border-top: 3px solid rgb(0,50,0);
+}
+
+/* FIRST SECTION *****************/
+section {
+	background: transparent;
+	padding: 50px auto;
+	border: 1px solid black;
+}
+
+h3 {
+	font-family: Impact, Charcoal, sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 1.2em;
+	font-size: 7vw;
+	color: darkorange;
+	text-shadow: 2px 1px 0px rgb(50,100,50);
+	margin: 5px auto 75px;
+}
+
+/* LITTLE GREEN DUDES -- ANIMATION ASIGNED ON TOUCH AND SCROLL IN INDEX.JS */
+#littleGreenDudes {
+	width: 100%;
+	margin: 0 auto;
+	background: white;
+	padding-top: 75px;
+	padding-bottom: 100px;
+	border-top: 3px solid rgb(0,50,0);
+	border-bottom: 3px solid rgb(0,50,0);
+}
+
+.greenDudeDiv {
+	position: relative;
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+}
+
+.greenDudeDiv p {
+	position: absolute;
+	display: block;
+	font-weight: bold;
+}
+
+.greenDudeIcon {
+	position: absolute;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+#labelEat {
+	top: -30px;
+	left: 15px;
+}
+
+#labelWait {
+	top: 65px;
+	left: 25px;
+}
+
+#labelEnjoy {
+	top: -30px;
+	left: 30px;
+}
+
+#greenDudeEat {
+	top: -3px;
+	left: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+@-webkit-keyframes eat {
+	0% {left: 10px;}
+	100% {left: -17px;}
+}
+@keyframes eat {
+	0% {left: 10px;}
+	100% {left: -17px;}
+}
+
+#brownie {
+	top: 25px;
+	right: -25px;
+	opacity: 0;
+}
+
+@-webkit-keyframes brownie {
+	0% {opacity: 0; right: -35px;}
+	100% {opacity: 1; right: 0;}
+}
+@keyframes brownie {
+	0% {opacity: 0; right: -35px;}
+	100% {opacity: 1; right: 0;}
+}
+
+#greenDude2 {
+	left: 50%;
+	margin-left: -25px;
+}
+
+#clock {
+	top: -30px;
+	left: 50%;
+	margin-left: -25px;
+	opacity: 0;
+}
+
+@-webkit-keyframes clock {
+	0% {opacity: 0; }
+	100% {opacity: 1;}
+}
+@keyframes clock {
+	0% {opacity: 0; }
+	100% {opacity: 1;}
+}
+
+#sec {
+	top: -22px;
+	left: 23px;
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	z-index:9999;
+}
+
+@-webkit-keyframes sec {
+	0% {-webkit-transform: rotate(0deg);transform: rotate(0deg); opacity: 1;}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg); opacity: 1;}
+}
+@keyframes sec {
+	0% {-webkit-transform: rotate(0deg);transform: rotate(0deg); opacity: 1;}
+	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg); opacity: 1;}
+}
+
+#greenDude3 {
+	right: 0;
+}
+
+#greenDudeSmile {
+	top: 5px;
+	left: -35px;	
+	width: 100px;
+	height: 100px;
+}
+
+@-webkit-keyframes smile {
+	0% {left: -35px; top: 5px;}
+	100% {left: -15px; top: -5px;}
+}
+@keyframes smile {
+	0% {left: -35px; top: 5px;}
+	100% {left: -15px; top: -5px;}
+}
+
+#shades {
+	top: -5px;
+	left: -15px;
+	opacity: 0;
+}
+
+@-webkit-keyframes shades {
+	0% {opacity: 0; }
+	100% {opacity: 1; left: 20px;}
+}
+@keyframes shades {
+	0% {opacity: 0; }
+	100% {opacity: 1; left: 20px;}
+}
+/* END LITTLE GREEND DUDES AND FIRST SECTION ******************/
+
+
+/* SECOND SECTION ************************************************************************/
+/* WHAY WE'RE THE BEST ****************************************************/
+section:nth-of-type(2) {
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+section:nth-of-type(2) h2 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.7em;
+	font-size: 9vw;
+	letter-spacing: 1.25px;
+	margin: 20px atuo 5px;
+	color: rgb(245,255,245);
+	/* text-shadow: 1px 1px 0px rgb(50,150,50); */
+	text-shadow: 1px 1px 0px darkorange;
+}
+
+section ul {
+	color: rgb(200,255,200);
+	list-style: none;
+	padding-left: 0;
+	/* text-align: left; */
+}
+
+section ul li {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: 15px auto;
+}
+
+section:nth-of-type(2) p {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	/* font-family: Impact, Charcoal, sans-serif; */
+	font-size: .75em;
+	font-style: italic;
+	letter-spacing: 1.25px;
+	margin: 20px atuo 5px;
+	color: rgb(100,125,100);
+	text-shadow: 1px 1px 0px rgb(25,50,25);
+}
+
+section:nth-of-type(2) a{
+	/* font-family: Impact, Charcoal, sans-serif; */
+	font-size: .9em;
+	letter-spacing: 1.25px;
+	margin: 20px atuo 5px;
+	color: rgb(125,150,125);
+	text-shadow: 1px 1px 0px rgb(25,50,25);
+}
+/* END WHY WWE'RE THE BEST AND SECOND SECTION ***************************/
+
+
+/* THIRD SECTION ***************************************************************************/
+/* INVITE AND BLOCKQUOTE */
+section:nth-of-type(3) {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+section:nth-of-type(3) h2{
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	font-size: 1.75em;
+	letter-spacing: 1.5px;
+	text-shadow: 1px 1px 0px rgb(150,225,150);
+}
+
+section:nth-of-type(3) h2 span{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: darkorange;
+}
+
+#down {
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.infoDiv {
+	display: inline-block;
+	width: 250px;
+	height: 150px;
+	margin: 25px auto;
+	color: rgb(50,50,50);
+	overflow: hidden;
+}
+
+.infoDiv a {
+	width: 250px;
+	padding-bottom: 75px;
+	
+}
+
+.infoDivTitle {
+	/* font-family: Impact, Charcoal, sans-serif; */
+	font-weight: 100;
+	font-size: 1.3em;
+	color: rgb(50,100,50);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgb(150,150,150);
+	cursor: pointer;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.infoDivTitle:active, .infoDivTitle:focus, .infoDivTitle:hover {
+	color: darkorange !important;
+	text-shadow: 2px 2px 2px rgb(150,225,150);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.infoDivIcon {
+	width: 250px;
+	height: 125px;
+	margin: 10px auto;
+}
+
+
+/* blockquote {
+	width: 90%;
+	margin: 10px auto;
+	text-align: justify;
+}
+
+section h4 {
+	text-align: right;
+	width: 90%;
+	max-width: 700px;
+	margin: 0px auto 10px;
+}
+
+section h4 span {
+	font-style: italic;
+	color: rgb(50,100,50);
+} */
+/* END THIRD SECTION ****************/
+
+
+/* MEDIUM SCREENS ************************************************/
+@media screen and (min-width: 550px) {
+	/* HEADER **********************************/
+	#logo {
+		height: 400px;
+		width: 500px;
+		padding-top: 50px;
+		background-image: url("../img/tabeLogoM.png");
+		background-size: 450px 300px;
+		-webkit-filter: drop-shadow(15px 15px 15px rgba(0,50,0,0.7));filter: drop-shadow(15px 15px 15px rgba(0,50,0,0.7));
+	}
+	
+	#oregon1,
+	#oregon2 {
+		position: absolute;
+		top: 175px;
+		left: 50%;
+		height: 225px;
+		width: 225px;
+		-webkit-filter: drop-shadow(10px 10px 10px rgba(0,50,0,0.7));filter: drop-shadow(10px 10px 10px rgba(0,50,0,0.7));
+	}
+
+	#oregon1 {
+		margin-left: -275px;
+	}
+
+	#oregon2 {
+		margin-left: 50px;
+	}
+
+	#logoTabeDude  {
+		top: 210px;
+		width: 75px;
+		height: 75px;
+		margin-left: -30px;
+	}
+	
+	@-webkit-keyframes reveal {
+		0% {top: 210px; opacity: 0;}
+		50% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 177px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	@keyframes reveal {
+		0% {top: 210px; opacity: 0;}
+		50% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 177px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 177px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	
+	h1 {
+		font-size: 3em;
+		font-size: 7vw;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+		font-size: 4vw;
+		margin: 5px auto;
+	}
+	/* END HEADER MEDIUM SCREENS *************************/
+	
+	/* MAIN SECTION MEDIUM SCREENS *********************************************/
+	#mobDiv {
+		height: 75px;
+		margin-top: 100px;
+		background: url("../img/backgroundImgs/mobM.jpg");
+		background-size: 100% 100%;
+	}
+	
+	/* FIRST SECTION MEDIUM SCREENS ************************/
+	section {
+		/* width: 90%; */
+		margin: 0 auto;
+		padding: 5px;
+		/* box-shadow: 0px 5px 5px rgba(50,100,50,0.7);
+		border-top: 1px solid white;
+		border-bottom: 1px solid darkgrey; */
+	}
+	
+	h3 {
+		font-size: 4vw;
+		margin: 5px auto;
+		letter-spacing: 1.75px;
+		margin: 25px auto 65px;
+	}
+	
+	/* LITTLE GREEN DUDES */
+	.greenDudeDiv {
+		width: 150px;
+		height: 150px;
+	}
+	
+	.greenDudeIcon {
+		width: 100px;
+		height: 100px;
+	}
+	
+	#labelEat {
+		left: 35px;
+	}
+	
+	#labelWait {
+		top: 115px;
+		left: 60px;
+	}
+	
+	#labelEnjoy {
+		left: 80px;
+	}
+
+	#greenDudeEat {
+		top: -3px;
+		left: 37px;
+		width: 150px;
+		height: 150px;
+	}
+
+	@-webkit-keyframes eat {
+		0% {left: 37px;}
+		100% {left: 0px;}
+	}
+	@keyframes eat {
+		0% {left: 37px;}
+		100% {left: 0px;}
+	}
+
+	#brownie {
+		top: 25px;
+		right: -25px;
+	}
+
+	@-webkit-keyframes brownie {
+		0% {opacity: 0; right: -35px;}
+		100% {opacity: 1; right: 0;}
+	}
+	@keyframes brownie {
+		0% {opacity: 0; right: -35px;}
+		100% {opacity: 1; right: 0;}
+	}
+
+	#greenDude2 {
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	#clock {
+		top: -65px;
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	@-webkit-keyframes clock {
+		0% {opacity: 0; }
+		100% {opacity: 1;}
+	}
+	@keyframes clock {
+			0% {opacity: 0; }
+			100% {opacity: 1;}
+		}
+	
+	#sec {
+		top: -44px;
+		left: 50px;
+		width: 50px;
+		height: 50px;
+	}
+
+	#greenDude3 {
+		right: 0;
+	}
+
+	#greenDudeSmile {
+		top: 20px;
+		left: -40px;	
+		width: 150px;
+		height: 150px;
+		-webkit-transform: rotate(-5deg);-ms-transform: rotate(-5deg);transform: rotate(-5deg);
+	}
+
+	@-webkit-keyframes smile {
+		0% {left: -40px; top: 20px;}
+		100% {left: 0px; top: 10px;}
+	}
+	@keyframes smile {
+		0% {left: -40px; top: 20px;}
+		100% {left: 0px; top: 10px;}
+	}
+
+	#shades {
+		top: -5px;
+		left: -15px;
+	}
+
+	@-webkit-keyframes shades {
+		0% {opacity: 0; }
+		100% {opacity: 1; left: 35px;}
+	}
+	@keyframes shades {
+		0% {opacity: 0; }
+		100% {opacity: 1; left: 35px;}
+	}
+	/* END FIRST SECTION MEDIUM SCREENS ************/
+	
+	
+	/* SECOND SECTION MEDIUM SCREENS *****************************/
+	section:nth-of-type(2) {
+		margin: 0;
+		border-top: none;
+	}
+	
+	section:nth-of-type(2) h2 {
+		font-size: 3em;
+		font-size: 7vw;
+	}
+	
+	section ul li {
+		font-size: 1.25em;
+	}
+	/* END SECOND SECTION MEDIUM SCREENS ***********/
+	
+	
+	/* THIRD SECTION MEDIUM SCREENS********************************************/
+	/* section:nth-of-type(3) {
+	} */
+	
+	section:nth-of-type(3) h2{
+		font-size: 2.5em;
+	}
+	
+	/* blockquote {
+		width: 90%;
+		max-width: 700px;
+		margin: 10px auto;
+		padding: 10px;
+		box-shadow: 0px 5px 5px rgba(50,100,50,0.7);
+		border-top: 1px solid white;
+		border-bottom: 1px solid darkgrey;
+	}
+	
+	section h4 {
+		text-align: right;
+		width: 90%;
+		max-width: 700px;
+		margin: 0px auto 10px;
+		padding: 10px;
+		box-shadow: 0px 5px 5px rgba(50,100,50,0.7);
+		border-top: 1px solid white;
+		border-bottom: 1px solid darkgrey;
+	} */
+	/* END THIRD SECTION MEDIUM SCREENS************/
+}
+/* END MEDIUM SCREENS *********************/
+
+
+/* LARGE SCREENS ********************************************************************/
+@media screen and (min-width: 1000px) {
+	/* HEADER LARGE SCREENS**************************/
+	#logo {
+		height: 500px;
+		width: 750px;
+		padding-top: 100px;
+		background-image: url("../img/tabeLogoL.png");
+		background-size: 650px 400px;
+	}
+	
+	#oregon1,
+	#oregon2 {
+		top: 100px;
+		left: 50%;
+		height: 400px;
+		width: 350px;
+		z-index: -1;
+	}
+
+	#oregon1 {
+		margin-left: -600px;
+	}
+
+	#oregon2 {
+		margin-left: 250px;
+	}
+	
+	#logoTabeDude  {
+		top: 250px;
+		width: 100px;
+		height: 100px;
+		margin-left: -40px;
+	}
+	
+	@-webkit-keyframes reveal {
+		0% {top: 250px; opacity: 0;}
+		50% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 220px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	@keyframes reveal {
+		0% {top: 250px; opacity: 0;}
+		50% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+		75% {top: 220px; opacity: 1; -webkit-transform: rotate(15deg); transform: rotate(15deg);}
+		100% {top: 220px; opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));}
+	}
+	
+	 h1 {
+		font-size: 5em;
+		font-size: 5vw;
+	}
+	
+	h2 {
+		font-size: 2em;
+		font-size: 3vw;
+	}
+	/* END HEADER LEARGE SCREENS ********************/
+	
+	/* MAIN SECTION LARGE SCREENS *********************************/
+	#mobDiv {
+		height: 125px;
+		margin-top: 100px;
+		background: url("../img/backgroundImgs/mobL.jpg");
+		background-size: 100% 100%;
+	}
+	
+	/* SECTION ONE LARGE SCREENS */
+	h3 {
+		font-size: 2em;
+		font-size: 3vw;
+	}
+	
+	#greenDudeDiv2 {
+		margin: auto 50px;
+	}
+	
+	/* SECTION TWO LARGE SCREENS */
+	section:nth-of-type(2) h2 {
+		font-size: 5em;
+		font-size: 5vw;
+	}
+	
+	section ul li {
+		font-size: 1.5em;
+	}
+	
+	/* SECTION THREE LARGE SCREENS */
+	section:nth-of-type(3) h2{
+		font-size: 3em;
+	}
+}
+/* END LARGE SCREENS **************/

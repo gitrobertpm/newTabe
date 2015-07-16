@@ -1,0 +1,319 @@
+/* MAIN CSS */
+/* DESIGNED FOR SMALL SCREENS FIRST */
+/* STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES */
+
+
+/* GENERAL RESETS AND STYLINGS**********************************************************/
+*, *:before, *:after {
+	/* UNIVERSAL BOX-SIZING - SET WIDTH TO INCLUDE PADDING AND BORDER */
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1em;
+	position: relative;
+}
+
+html,
+body,
+header,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+span,
+footer {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+	/* MORE ANCHOR STYLINGS BELOW, JUST BEFORE MEDIA QUERIES */
+}
+
+p {
+	color: rgb(50,100,50);
+	cursor: default;
+}
+
+hr {
+	width: 90%;
+	max-width: 1000px;
+	border-radius: 50%;
+}
+/* END GENERAL *********************************/
+
+
+/* NAV ************************************************************/
+#navWrapper {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	z-index: 999999;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -22.5px;
+	width: 45px;
+	height: 45px;
+	padding: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+	z-index: 9999999;
+}
+
+.nBar {
+	width: 35px;
+	height: 10px;
+	margin: 3px;
+	background: -webkit-radial-gradient(rgb(100,200,100), rgb(50,150,50));background: radial-gradient(rgb(100,200,100), rgb(50,150,50));
+	border-radius: 5px;
+	border-top: 1px solid rgb(150,200,150);
+	border-bottom: 1px solid black;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 50px;
+}
+
+nav ul li {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	font-size: .9em;
+}
+
+nav ul li:nth-of-type(1) {
+	top: 27.5px;
+	margin-left: -25px;
+}
+
+nav ul li:nth-of-type(2) {
+	top: 5px;
+	margin-left: -85px;
+}
+
+nav ul li:nth-of-type(3) {
+	top: 5px;	
+	margin-left: 10px;
+}
+
+.navLink {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: 100;
+	color: rgb(200,255,200);
+	text-shadow: 1px 1px 1px rgb(50,150,50); 
+	outline: 0;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+#closeNav {
+	position: fixed;
+	display: hidden;
+	top: 5px;
+	right: 5px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: darkorange;
+	border: 1px solid black;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+	z-index: 99999999;
+}
+
+#closeNav p {
+	font-weight: bold;
+	margin-top: -3px;
+	margin-left: 5px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+/* RESOURCES NAV SUB MENU */
+#navResourceDiv {
+	display: none;
+	position: absolute;
+	top: 32px;
+	left: 50%;
+	margin-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	width: 150px;
+	background: rgba(25,50,25,0.8);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+#navResourceDiv ul {
+	padding-left: 10px;
+	text-align: left;
+}
+
+#navResourceDiv ul li{
+	display: block;
+	margin: 7.5px auto;
+	border-bottom: 1px solid rgb(50,50,50);
+}
+
+button {
+	display: inline-block;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 1.25em;
+	text-align: center;
+	color: white;
+	width: 100px;
+	background: rgba(0,150,0,0.3);
+	padding: 5px;
+	border: none;
+	border-top: 1px solid lawngreen;
+	border-bottom: 1px solid green;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px lawngreen inset, -2px -2px 5px green inset;
+	outline: 0;
+	cursor: pointer;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+/* END NAV ***************************************************/
+
+
+/* FOOTER STYLINGS */
+footer {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	background: -webkit-linear-gradient(left, rgb(0,15,0), black, rgb(0,15,0));background: linear-gradient(to right, rgb(0,15,0), black, rgb(0,15,0));
+}
+
+#footerTabeDude {
+	width: 75px;
+	height: 75px;
+	margin: auto auto 10px;
+	background-repeat: no-repeat !important;
+	background-position: bottom !important;
+	background-size: 100% 65% !important;
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+footer ul li {
+	display: inline-block;
+	font-size: .9em;
+	height: 75px;
+	margin: 10px;
+	padding-left: 0px;
+	background-repeat: no-repeat !important;
+	background-position: bottom !important;
+	background-size: 100% 65% !important;
+}
+
+footer ul li:nth-of-type(2) {
+	top: 40px;
+	background-size: 75% 65% !important;
+}
+
+footer ul li:nth-of-type(3) {
+	background-size: 75% 65% !important;
+}
+
+footer ul li a {
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding-bottom: 50px;
+	color: rgb(200,255,200);
+	text-shadow: 1px 1px 1px rgb(50,150,50); 
+	outline: 0;
+}
+
+footer p {
+	font-size: .8em;
+	color: rgb(200,255,200);
+}
+/* END FOOTER *************************************/
+
+
+/* LINKS *************************************************************/
+#email:active, #email:focus, #email:hover,
+button:active, button:focus, button:hover,
+.navLink:active, .navLink:focus, .navLink:hover,
+a:active, a:focus, a:hover {
+	color: darkorange !important;
+	text-shadow: 2px 2px 2px rgb(150,225,150);
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+.selected {
+	color: darkorange;
+	font-size: 1.1em;
+}
+/* END LINKS ****************************************/
+
+
+/* MEDIUM SCREENS *********************************************************/
+@media screen and (min-width: 550px) {
+	nav {
+		margin-left: -32.5px;
+		width: 65px;
+	}
+
+	.nBar {
+		width: 50px;
+	}
+	
+	nav ul li {
+		font-size: 1.1em;
+		width: 125px;
+	}
+
+	nav ul li:nth-of-type(1) {
+		top: 10px;
+		margin-left: -140px;
+	}
+
+	nav ul li:nth-of-type(2) {
+		top: 10px;
+		margin-left: -40px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	nav ul li:nth-of-type(3) {
+		top: 10px;	
+		margin-left: 85px;
+	}
+	
+	/* RESOURCES NAV SUB MENU */
+	#navResourceDiv {
+		position: absolute;
+		top: 32px;
+		margin-left: 85px;
+	}
+
+/* END NAV ***************************************************/
+
+	footer ul li {
+		margin: auto 15px;
+	}
+}
+
+/* LARGE SCREENS **************************************************************/
+@media screen and (min-width: 1000px) {
+	footer ul li {
+		margin: auto 50px;
+	}
+}

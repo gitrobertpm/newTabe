@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Freshest High | TABE Take and Bake Edibles</title>
+		<meta name="description" content="A powerful DIY tool which will educate the community on dosing factors, potency and preparation of marijuana edible products.">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+	</head>
+	<body onResize="window.location.href = window.location.href;" id="body">
+
+		<!-- BACKGROUNDS -->
+		<div id="background"></div>
+		<div id="background2"></div>
+		
+		<!-- MAIN SECTION STARTING WITH THE HEADER -->
+		<div id="outerWrapper">
+			<header>
+				<!-- NAV STYLINGS IN MAIN.CSS-->
+				<div id="navWrapper">
+					<nav id="nav" onclick="navi()">
+						<div id="nBar1" class="nBar"></div>
+						<div id="nBar2" class="nBar"></div>
+						<div id="nBar3" class="nBar"></div>
+						<div id="innerNav">
+							<ul>
+								<li><a href="homePage.html" class="navLink selected">HOME</a></li>
+								<li><a href="products.html" class="navLink">PRODUCTS</a></li>
+								<li><p id="resourceButton" class="navLink" onclick="openResources()">RESOURCES</p></li>
+							</ul>
+						</div>
+					</nav>
+					<div id="closeNav" onclick="closeNavi()"><p>x</p></div>
+					<div id="navResourceDiv">
+						<ul>
+							<li><a href="about.html" class="navLink">ABOUT</a></li>
+							<li><a href="contact.html" class="navLink">CONTACT</a></li>
+							<li><a href="coupon.html" target="_blank" class="navLink">COUPON</a></li>
+							<li><a href="resources.html" class="navLink">RESOURCES</a></li>
+							<li><a href="comingsoon.html" class="navLink">COMING SOON</a></li>
+						</ul>
+							<button onclick="closeResources()">EXIT</button>
+					</div>
+				</div>
+				<!-- HEADER IMAGES -->
+				<div id="logoTabeDude"></div>
+				<div id="logo"></div>
+				<div id="oregon1"></div>
+				<div id="oregon2"></div>
+				<h1>TAKE AND BAKE EDIBLES</h1>
+				<h2>"The Freshest High"</h2>
+			</header>
+			
+			<!-- MAIN BODY OF HOME PAGE -->
+			<div id="innerWrapper">
+				
+				<!-- MOBIUS IMAGE -->
+				<div id="mobDiv"></div>
+				
+				<!-- FIRST SECTION -->
+				<!-- LITTLE GREEN DUDES -->
+				<section id="littleGreenDudes">
+					<h3>Prepare at your convenience,<br>then...</h3>
+					<div id="greenDudeDiv1" class="greenDudeDiv">
+						<div id="greenDude1" class="greenDudeIcon"></div>
+						<div id="greenDudeEat" class="greenDudeIcon"></div>
+						<div id="brownie" class="greenDudeIcon"></div>
+						<p id="labelEat">eat</p>
+					</div>
+					<div id="greenDudeDiv2" class="greenDudeDiv">
+						<div id="greenDude2" class="greenDudeIcon"></div>
+						<div id="clock" class="greenDudeIcon"></div>
+						<div id="sec" class="greenDudeIcon"></div>
+						<p id="labelWait">wait</p>
+					</div>
+					<div id="greenDudeDiv3" class="greenDudeDiv">
+						<div id="greenDude3" class="greenDudeIcon"></div>
+						<div id="greenDudeSmile" class="greenDudeIcon"></div>
+						<div id="shades" class="greenDudeIcon"></div>
+						<p id="labelEnjoy">enjoy</p>
+					</div>
+				</section>
+				
+				<!-- SECOND SECTION -->
+				<!-- WHY WE'RE THE BEST -->
+				<section id="s2_weedImg">
+					<h2>WHY WE'RE THE BEST</h2>
+					<br>
+					<ul>
+						<li>Quality products</li>
+						<li>Professionally tested</li>
+						<li>Locally grown and prepared</li>
+						<li>Original convenient Take and Bake kit</li>
+						<li>Designed to help you have a good experience</li>
+					</ul>
+					<p>Photo by <a href="https://en.wikipedia.org/wiki/Tetrahydrocannabinol#/media/File:White_widow.jpg">Lenny Montana,</a> <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a>, modified</p>
+				</section>
+				
+				<!-- THIRD SECTION -->
+				<!-- INVITE AND BLOCKQUOTE -->
+				<section>
+					<h2><span>"</span>HIGH<span>-</span>LIGHTS<span>"</span></h2>
+					<!-- <br> -->
+					<div id="down"></div>
+					<br>
+					<div id="productsDiv" class="infoDiv">
+						<div id="productsIcon" class="infoDivIcon">
+							<a href="products.html" class="infoDivTitle">PRODUCTS</a>
+						</div>
+					</div>
+					<div id="couponDiv" class="infoDiv">
+						<div id="couponIcon" class="infoDivIcon">
+							<a href="coupon.html" target="_blank" class="infoDivTitle">COUPON</a>
+						</div>
+					</div>
+					<div id="comingSoonDiv" class="infoDiv">
+						<div id="comingSoonIcon" class="infoDivIcon">
+							<a href="comingsoon.html" class="infoDivTitle">COMING SOON</a>
+						</div>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+		
+		<!-- FOOTER STYLINGS MAIN.CSS -->
+		<footer>
+			<div id="footerTabeDude"></div>
+			<p>Thanks for visiting</p>
+			<br>
+			<ul>
+				<li class="footerLink"><a href="homePage.html" class="selected">HOME</a></li>
+				<li class="footerLink"><a href="products.html">PRODUCTS</a></li>
+				<li class="footerLink"><a href="resources.html">RESOURCES</a></li>
+				<li class="footerLink"><a href="about.html">ABOUT</a></li>
+				<li class="footerLink"><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<br>
+			<p>&copy; Take and Bake Edibles, LLC &copy;</p>
+			<p>Web Design and Development by Robert Manolis, Milwaukie OR, 2015</p>
+		</footer>
+		
+		<script src="js/main.js"></script>
+		<script src="js/home.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,133 @@
+/* INDEX CSS */
+/* DESIGNED FOR SMALL SCREENS FIRST */
+/* STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES */
+/* IMAGES LOADED IN INDEX.JS  */
+
+
+/* DISCLAIMER PAGE STYLINGS ***************************************/
+/* html,
+body,
+#background,
+#background2 {
+	width: 100%;
+	height: 100%;
+} */
+
+body {
+	background: rgb(0,25,0);
+}
+
+#background {
+	background: -webkit-linear-gradient(top left, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));background: linear-gradient(to bottom right, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));
+}
+
+#background2 {
+	background: -webkit-linear-gradient(top right, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));background: linear-gradient(to bottom left, rgba(50,100,50,0.2), rgba(200,225,255,0.2), rgba(255,255,255,0.2), rgba(200,225,255,0.2), rgba(50,100,50,0.2));
+}
+
+#medWarning {
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 1.3em;
+	color: black;
+	width: 100%;
+	padding: 15px;
+	margin: 0 auto 25px;
+	background: linear-gradient(to right, rgba(225,75,25,0.9), rgba(225,100,50,0.9), rgba(225,75,25,0.9));
+	border-top: 1px solid rgb(255,125,50);
+	border-bottom: 1px solid rgb(255,125,50);
+}
+
+#medWarning span {
+	font-size: 1.3em;
+}
+
+section {
+	padding-top: 25px;
+	text-align: center;
+}
+
+#tabeDude {
+	height: 75px;
+	width: 75px;
+	margin: auto;
+}
+
+
+section p {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1.25em;
+	color: rgb(200,255,200);
+	text-shadow: 1px 1px 1px rgb(50,150,50);
+	margin: auto;
+	padding: 10px;
+}
+
+section p a {
+	color: rgb(100,175,100)
+}
+
+.disLinks {
+	display: inline-block;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	color: dark green;
+	width: 150px;
+	background: rgba(0,150,0,0.3);
+	padding: 10px;
+	margin: 25px;
+	border: none;
+	border-top: 1px solid lawngreen;
+	border-bottom: 1px solid green;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px lawngreen inset, -2px -2px 5px green inset;
+	outline: 0;
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 25px;
+}
+
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 550px) {
+	#medWarning {
+		font-size: 1.5em;
+	}
+
+	#medWarning span {
+		font-size: 1.5em;
+	}
+
+	#tabeDude {
+		height: 100px;
+		width: 100px;
+		-webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));
+	}
+
+	section p {
+		font-size: 1.5em;
+		margin: 25px auto;
+		max-width: 720px;
+	}
+	
+	.disLinks {
+		-webkit-filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7)); filter: drop-shadow(5px 5px 5px rgba(0,50,0,0.7));
+	}
+	
+	footer {
+		margin-top: 50px;
+	}
+
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1000px) {
+	#tabeDude {
+		height: 150px;
+		width: 150px;
+	}
+}

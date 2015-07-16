@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Freshest High | TABE Take and Bake Edibles</title>
+		<meta name="description" content="A powerful DIY tool which will educate the community on dosing factors, potency and preparation of marijuana edible products.">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/products.css">
+	</head>
+	<body id="body" onload="check()">
+		<div id="wrapper"></div>	
+			<!-- PURE CSS SLIDER
+			I GOT THIS IDEA FROM A WORKSHOP VIDEO OVER AT TEMATREEHOUSE.COM -->
+			<header>
+				<!-- NAV STYLINGS IN MAIN.CSS-->
+				<div id="navWrapper">
+					<nav id="nav" onclick="navi()">
+						<div id="nBar1" class="nBar"></div>
+						<div id="nBar2" class="nBar"></div>
+						<div id="nBar3" class="nBar"></div>
+						<div id="innerNav">
+							<ul>
+								<li><a href="homePage.html" class="navLink">HOME</a></li>
+								<li><a href="products.html" class="navLink selected">PRODUCTS</a></li>
+								<li><p id="resourceButton" class="navLink" onclick="openResources()">RESOURCES</p></li>
+							</ul>
+						</div>
+					</nav>
+					<div id="closeNav" onclick="closeNavi()"><p>x</p></div>
+					<div id="navResourceDiv">
+						<ul>
+							<li><a href="about.html" class="navLink">ABOUT</a></li>
+							<li><a href="contact.html" class="navLink">CONTACT</a></li>
+							<li><a href="coupon.html" target="_blank" class="navLink">COUPON</a></li>
+							<li><a href="resources.html" class="navLink">RESOURCES</a></li>
+							<li><a href="comingsoon.html" class="navLink">COMING SOON</a></li>
+						</ul>
+							<button onclick="closeResources()">EXIT</button>
+					</div>
+				</div>
+
+			</header>
+			<div id="wrap" class="wrap">
+			
+			    <div id="sDiv">
+				   <label for="slide-1-trigger">BROWNIES</label>
+				   <label for="slide-2-trigger">WARNING</label>
+				   <label for="slide-3-trigger">DIRECTIONS</label>
+				   <label for="slide-4-trigger">ADVICE</label>
+			    </div>
+
+			    <input id="slide-1-trigger" type="radio" name="slides" onclick="check()" checked>
+			    <section class="slide slide-one">
+					<h1 class="sh1">BROWNIES</h1>
+					<br>
+					<div id="brownieKit" class="imgDiv"></div>
+					
+					<ul>
+						<li>Professionally tested</li>
+						<li>Locally grown and prepared</li>
+						<li>Original convenient Take and Bake kit</li>
+						<li>Designed to help you have a good experience</li>
+					</ul>
+					<div id="testingDiv">						
+						<h3>Testing performed by:</h3>
+						<div id="testing" class="imgDiv"></div>
+					</div>
+					<div id="flare" class="imgDiv"></div>
+			    </section>
+			    
+			    <input id="slide-2-trigger" type="radio" name="slides" onclick="check()">
+			    <section class="slide slide-two">
+					<h1 class="sh1">WARNING</h1>
+					<br>
+					<br>
+					<div>
+						<p>For Medical use only</p>
+						<p>Contains medicinal cannabis</p>
+						<p>Keep out of reach of children</p>
+						<p>Ensure leftovers are secured in a safe location</p>
+						<p>Products infused with marijuana can impair concentration, coordination and judgement</p>
+						<p>Do not operate a vehicle or machinery under the influence of this product</p>
+						<p>There may health risks associated with consumption of this product</p>
+						<p>This product may be unlawful outside Oregon</p>
+					</div>
+			    </section>
+			    
+			    <input id="slide-3-trigger" type="radio" name="slides" onclick="check()">
+			    <section class="slide slide-three">
+					<h1 class="sh1">DIRECTIONS</h1>
+					<br>
+					<p><span>ITEMS REQUIRED:</span><br>Egg, Bowl, Spoon, Oven</p>
+					<br>
+					<ol>
+						<li><span>Preheat oven to 350&#176;</span><br></li>
+						<li><span>Warm coconut oil packet with warm water to a liquid state</span><br><img src="img/productImgs/warmingOil.png" alt="Warming Oil" id="warmingOil" class="instructionImg"></li>
+						<li><span>Mix dry ingredients with 1 egg &amp; oil packet in a bowl</span><br><img src="img/productImgs/dryIngredients.png" alt="Dry Ingredients" id="dryIngredients" class="instructionImg"><img src="img/productImgs/egg.png" alt="Egg" id="egg" class="instructionImg"><img src="img/productImgs/oilPacket.png" alt="Oil Packet" id="oilPacket" class="instructionImg"></li>
+						<li><span>Use non-stick cooking spray inside aluminum pan (rinse pan first)</span><br><img src="img/productImgs/pam.png" alt="Non-stick cooking spray" id="pam" class="instructionImg"></li>
+						<li><span>Pour mixed contents into pan</span><br><img src="img/productImgs/mixed.png" alt="Mixed COntents" id="mixedContents" class="instructionImg"></li>
+						<li><span>Bake at 350&#176; uncovered for 30 - 33 mins (check with toothpick)</span><br><img src="img/productImgs/toothpick.png" alt="Toothpick" id="toothpick" class="instructionImg"></li>
+						<li><span>Allow to cool</span><br><img src="img/productImgs/cool.png" alt="Brownies cooling in pan" id="Cool" class="instructionImg"></li>
+						<li><span>Enjoy</span><br><img src="img/productImgs/done.png" alt="Brownies ready to eat" id="done" class="instructionImg"></li>
+					</ol>
+					<p><span>TIP:</span> add a half cup of chocolate chips or a swirl of caramel to add some pizazz</p>
+			    </section>
+			    
+			    <input id="slide-4-trigger" type="radio" name="slides" onclick="check()">
+			    <section class="slide slide-four">
+					<h1 class="sh1">ADVICE</h1>
+					<br>
+					<br>
+					<div>
+						<p>To ensure a quality and pleasant experience, it is recommended that you start off with a small dose, wait 30 min, and gradually work up from there.</p>
+						<br>
+						<p>Paranoia and anxiety are among the leading causes of a bad experience.</p>
+						<p>So if the experience becomes too intense, remember to stay calm, remind yourself that it will pass, and just try to enjoy the journey.</p>
+						<br>
+						<p>Cheers!</p>
+
+					</div>
+			    </section>
+			</div>
+			
+		<!-- THE FOLLOWING COMENTED SECTIONS ARE BUILT FOR NEW PRODUCTS
+
+		THE BASIC CSS HAS ALREADY BEEN WRITTEN -->
+			
+			<!-- <div class="wrap">
+			
+			    <div id="sDiv2">
+				   <label for="slide-11-trigger">Slide One</label>
+				   <label for="slide-22-trigger">Slide Two</label>
+				   <label for="slide-33-trigger">Slide Three</label>
+				   <label for="slide-44-trigger">Slide Four</label>
+			    </div>
+
+			    <input id="slide-11-trigger" type="radio" name="slides2" checked>
+			    <section class="slide slide-one1">
+					<h1 class="sh1">TAKE AND BAKE EDIBLES</h1>
+					
+			    </section>
+			    
+			    <input id="slide-22-trigger" type="radio" name="slides2">
+			    <section class="slide slide-two2">
+					<h1 class="sh1">Headline Two</h1>
+					<p>stuff and stuff</p>
+			    </section>
+			    
+			    <input id="slide-33-trigger" type="radio" name="slides2">
+			    <section class="slide slide-three3">
+					<h1 class="sh1">Headline Three</h1>
+					<p>stuff and stuff</p>
+			    </section>
+			    
+			    <input id="slide-44-trigger" type="radio" name="slides2">
+			    <section class="slide slide-four4">
+					<h1 class="sh1">Headline Four</h1>
+					<p>stuff and stuff</p>
+			    </section>
+			</div>
+			<div class="wrap">
+			
+			    <div id="sDiv3">
+				   <label for="slide-111-trigger">Slide One</label>
+				   <label for="slide-222-trigger">Slide Two</label>
+				   <label for="slide-333-trigger">Slide Three</label>
+				   <label for="slide-444-trigger">Slide Four</label>
+			    </div>
+
+			    <input id="slide-111-trigger" type="radio" name="slides3" checked>
+			    <section class="slide slide-one11">
+					<h1 class="sh1">TAKE AND BAKE EDIBLES</h1>
+					
+			    </section>
+			    
+			    <input id="slide-222-trigger" type="radio" name="slides3">
+			    <section class="slide slide-two22">
+					<h1 class="sh1">Headline Two</h1>
+					<p>stuff and stuff</p>
+			    </section>
+			    
+			    <input id="slide-333-trigger" type="radio" name="slides3">
+			    <section class="slide slide-three33">
+					<h1 class="sh1">Headline Three</h1>
+					<p>stuff and stuff</p>
+			    </section>
+			    
+			    <input id="slide-444-trigger" type="radio" name="slides3">
+			    <section class="slide slide-four44">
+					<h1 class="sh1">Headline Four</h1>
+					<p>stuff and stuff</p>
+			    </section>
+
+			</div> -->
+		</div>
+		
+		<footer>
+			<div id="footerTabeDude"></div>
+			<p>Thanks for visiting</p>
+			<br>
+			<ul>
+				<li class="footerLink"><a href="homePage.html">HOME</a></li>
+				<li class="footerLink"><a href="products.html" class="selected">PRODUCTS</a></li>
+				<li class="footerLink"><a href="resources.html">RESOURCES</a></li>
+				<li class="footerLink"><a href="about.html">ABOUT</a></li>
+				<li class="footerLink"><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<br>
+			<p>&copy; Take and Bake Edibles, LLC &copy;</p>
+			<p>Web Design and Development by Robert Manolis, Milwaukie OR, 2015</p>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src="js/products.js"></script>
+	</body>
+</html>
