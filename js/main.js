@@ -41,7 +41,7 @@ function navi() {
 	// CLOSE HADER NAV BUTTON STYLE
 	closeNav.style.cursor = "pointer";
 	closeNav.style.display = "block";
-	closeNav.style.zIndex = "999999";
+	closeNav.style.zIndex = "9999999999";
 	
 	// SHOW HEADER NAV ANCHORS
 	for (i = 0; i < navLink.length; i++) {

@@ -132,7 +132,7 @@ nav ul li:nth-of-type(3) {
 	background: darkorange;
 	border: 1px solid black;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
-	z-index: 99999999;
+	z-index: 999999999999;
 }
 
 #closeNav p {
